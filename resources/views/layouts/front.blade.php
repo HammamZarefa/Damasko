@@ -16,7 +16,14 @@
   <!-- Favicons -->
   <link href="{{ asset('storage/'.$general->favicon) }}" rel="icon">
   <link href="{{ asset('storage/'.$general->logo) }}" rel="apple-touch-icon">
-
+  {{--<link href="{{ asset('front/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">--}}
+  <link href="{{ asset('front/vendor/icofont/icofont.min.css') }}" rel="stylesheet">
+  {{--<link href="{{ asset('front/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">--}}
+  {{--<link href="{{ asset('front/vendor/animate.css/animate.min.css') }}" rel="stylesheet">--}}
+  {{--<link href="{{ asset('front/vendor/venobox/venobox.css') }}" rel="stylesheet">--}}
+  {{--<link href="{{ asset('front/vendor/owl.carousel/assets/owl.carousel.min.css') }}" rel="stylesheet">--}}
+  {{--<link href="{{ asset('front/vendor/aos/aos.css') }}" rel="stylesheet">--}}
+  {{--<link href="{{ asset('front/vendor/remixicon/remixicon.css') }}" rel="stylesheet">--}}
   @yield('meta')
   
   <!-- Google Fonts -->
