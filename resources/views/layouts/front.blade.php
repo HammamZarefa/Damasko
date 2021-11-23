@@ -97,21 +97,21 @@
           <ul id="menu" class="sf-menu">
 
             <li><a href="#projects">Latest Dishes</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#">Features</a>
-              <ul>
-                <li><a href="index_full_slide.html">Full Slider</a></li>
-                <li><a href="index_video.html">Slider Video</a></li>
-                <li><a href="sample_page.html">Sample Page</a></li>
-                <li>
-                  <a href="#">Third Level</a>
-                  <ul>
-                    <li><a href="#">Link Third Level</a></li>
-                    <li><a href="#">Link Third Level</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
+            <li><a href="#services">Features</a></li>
+            {{--<li><a href="#">Features</a>--}}
+              {{--<ul>--}}
+                {{--<li><a href="index_full_slide.html">Full Slider</a></li>--}}
+                {{--<li><a href="index_video.html">Slider Video</a></li>--}}
+                {{--<li><a href="sample_page.html">Sample Page</a></li>--}}
+                {{--<li>--}}
+                  {{--<a href="#">Third Level</a>--}}
+                  {{--<ul>--}}
+                    {{--<li><a href="#">Link Third Level</a></li>--}}
+                    {{--<li><a href="#">Link Third Level</a></li>--}}
+                  {{--</ul>--}}
+                {{--</li>--}}
+              {{--</ul>--}}
+            {{--</li>--}}
             <li><a href="#pricing_info">Pricing Menu</a></li>
             <li><a href="#contact">Contact</a></li>
 

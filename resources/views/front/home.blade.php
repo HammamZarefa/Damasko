@@ -239,7 +239,7 @@
     <!--Services-->
     <section class="services" id="services">
       <div class="container">
-        <h2 class="center">Look Some Services that We Offer you</h2>
+        <h2 class="center">Look Some Features that We Offer you</h2>
 
         <div class="items_services center">
 

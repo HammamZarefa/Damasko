@@ -100,7 +100,7 @@ body{
 	font-size: 16px;	
 	font-family: 'Open Sans', sans-serif;
 	line-height:26px;
-	color:#fff;
+	color:#4e7292;
 	font-weight: 300;
 	background: url(../img/bg_body.png);
 }
@@ -109,7 +109,7 @@ a{
 }
 a:hover{
 	text-decoration: none;	
-	color: #43402f;
+	color: #d4d52e;
 }
 p{
 	margin:0 0 20px 0;
@@ -169,6 +169,7 @@ a:hover{
 }
 .top{
 	margin-top: 30px;
+	color: #e6b82d;
 }
 .mini_top{
 	margin-top: 20px;
@@ -179,7 +180,9 @@ a:hover{
 }
 .services{
 	padding: 100px 0 150px 0;
+	color:#d9b334
 }
+
 form{
 	margin: 0;
 	padding: 0;
@@ -206,7 +209,7 @@ footer{
 .some_about,
 .pricing{
 	padding: 50px 15px;
-	color: #423935;
+	color: #4e7292;
 }
 /* MENU ----------------------------------------------------------------------*/
 nav{
@@ -249,7 +252,7 @@ nav .botton.donate{
 	top:-999em;
 	width:170px;
 	display:none;
-	background: #37302d;	
+	background: #d9b334;	
 	text-align: left;
 }
 .sf-menu > li{
@@ -315,7 +318,7 @@ nav .botton.donate{
 	height: 375px;
 }
 .newsletter{
-	background-color: #383232;
+	background-color: #4e7292;
 	padding: 20px 25px 25px 25px;
 }
 .newsletter h2, .newsletter p{
@@ -352,6 +355,7 @@ nav .botton.donate{
 	margin: 0 auto;
 	margin-top: 30px;
 }
+
 .buttons{
 	margin-top: 30px;
 }
@@ -372,7 +376,7 @@ nav .botton.donate{
 .social i{
 	font-size: 30px;
 	line-height: 40px;
-	background-color: #37302d;
+	background-color: #d9b334;
 	border-radius: 100%;
 	padding: 14px 22px;	
 	-webkit-transition: all .2s linear;
@@ -494,7 +498,7 @@ nav .botton.donate{
 /* SERVICES----------------------------------------------------------------------*/
 
 .icon_service{
-	background-color: #37302d;
+	background-color: #d9b334;
 	max-width: 185px;
 	margin: 0 auto;
 	border-radius: 100%;
@@ -513,6 +517,7 @@ nav .botton.donate{
 }
 .pricing_info{
 	padding: 100px 0 300px 0;
+	color: #e6b82d;
 }
 .pricing_info p{
 	width: 70%;
@@ -536,6 +541,7 @@ nav .botton.donate{
 	font-size: 21px;
 	line-height: 31px;
 	padding: 0 0 10px 0;
+	color:#333;
 }
 .item_table ul li{
 	list-style: none;
@@ -596,7 +602,7 @@ nav .botton.donate{
 .price{
 	position: relative;
 	font-weight: 700;
-	color: #514944;
+	color: #fbf8f2;
 }
 .price .number_price{
 	padding: 0 10px 0 40px;
@@ -670,7 +676,7 @@ nav .botton.donate{
 	padding-right: 10px;
 }
 .step_text li a{
-	color: #37302d;
+	color: #d9b334;
 	font-weight: 500;
 	font-size: 14px;
 }
@@ -724,9 +730,10 @@ nav .botton.donate{
 .contact_form{
 	padding: 20px;
 	margin-top: 50px;
-	background: #423935 url(../img/message.png) no-repeat;
+	background: #4e7292 url(../img/message.png) no-repeat;
 	position: relative;
 	z-index: 1;
+	color: #e6b82d;
 }
 .contact_form form{
 	width: 90%;
@@ -754,12 +761,13 @@ nav .botton.donate{
 }
 /* FOOTER --------------------------------------------------------------------------*/
 footer{
-	background: #383232 url(../img/world_map.png);
+	background: #4e7292 url(../img/world_map.png);
 	padding: 200px 0 100px 0;	
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	background-position: center center;
+	color:#d9b334
 }
 footer a:hover{
 	text-decoration: underline;
@@ -790,6 +798,7 @@ footer .info_about li:first-child{
 }
 .copry p{
 	margin-top: 16px;
+	color:#d9b334
 }
 .copry .logo{
 	font-size: 40px;
@@ -806,7 +815,7 @@ footer .info_about li:first-child{
 	font-size: 22px;
 	border-radius: 100%;
 	margin: 20px 5px 0 5px;
-	background-color: #383232;
+	background-color: #4e7292;
 	padding: 12px 19px 13px 18px;
 	color: #fff;
 }

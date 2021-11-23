@@ -6,7 +6,7 @@ nav,
 .services,
 .copry
 {	
-	background-color: #423935;
+	background-color: #43627d;
 }
 .hover_big .text_hover_big,
 .botton,
@@ -23,16 +23,16 @@ nav,
 }
 /*Background with Image*/
 .map{
-	background: #423935 url(../../img/world_map.png);
+	background: #4e7292  url(../../img/world_map.png);
 }
 
 .services{	
-	background: #423935 url(../../img/pattern2.png);
+	background: #4e7292  url(../../img/pattern2.png);
 }
 .pricing_info{	
-	background: #423935 url(../../img/pattern1.png);
+	background: #4e7292  url(../../img/pattern1.png);
 }
 
 .projects h2{
-	color: #B53D22;
+	color: #4e7292;
 }
