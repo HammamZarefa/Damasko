@@ -1,0 +1,28 @@
+body{
+	overflow: auto;
+}
+.view_more h3 {
+	font-size: 18px;
+	line-height: 30px;
+}
+.ie{
+	display: inline-block;
+	margin-left: 22%;
+	font-size: 28px;
+	color: #423935;
+	font-style: italic;
+}
+.ie_short{
+	display: inline-block;
+	font-size: 28px;
+	font-weight: 500;
+}
+.sentence_text span{
+	padding-left: 10px;
+}
+.price .dolar {
+	padding-left: 450px;
+}
+.steps{
+	overflow: hidden;
+}

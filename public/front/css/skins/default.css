@@ -1,0 +1,38 @@
+/*Background*/
+nav,
+.text_hover_big a,
+.view a,
+.view_three a,
+.services,
+.copry
+{	
+	background-color: #423935;
+}
+.hover_big .text_hover_big,
+.botton,
+.view_more .text_hover_small,
+.view_three_text,
+.image_text_hover,
+.sf-menu li li a:hover
+{
+	background-color: #e6b82d;
+
+}
+.sf-menu ul{
+	border-left: 6px solid #B53D22;	
+}
+/*Background with Image*/
+.map{
+	background: #423935 url(../../img/world_map.png);
+}
+
+.services{	
+	background: #423935 url(../../img/pattern2.png);
+}
+.pricing_info{	
+	background: #423935 url(../../img/pattern1.png);
+}
+
+.projects h2{
+	color: #B53D22;
+}
