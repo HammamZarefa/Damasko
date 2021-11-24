@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{BannerController, CategoryController, FaqController, FrontController, GeneralController, LinkController, PageController, PartnerController, PcategoryController, PortfolioController, PostController, ServiceController, TagController, TestimonialController, TeamController, UserController};
+use App\Http\Controllers\{BannerController, CategoryController, FaqController, FrontController, GeneralController, LinkController, PageController, PartnerController, PcategoryController, PortfolioController, PostController, ServiceController, TagController, TestimonialController, TeamController, UserController,PricingController,LocalizationController};
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +17,7 @@ use App\Http\Controllers\{BannerController, CategoryController, FaqController, F
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+Route::get('lang/{locale}', [App\Http\Controllers\LocalizationController::class, 'index']);
 Route::get('/', [FrontController::class, 'home'])->name('homepage');
 Route::post('/', [FrontController::class, 'subscribe'])->name('subscribe');
 Route::get('about-us', [FrontController::class, 'about'])->name('about');
@@ -82,6 +83,14 @@ Route::prefix('admin')->middleware('auth')->group(function () {
      Route::get('categories/edit/{id}', [CategoryController::class, 'edit'])->name('admin.category.edit');
      Route::post('categories/edit/{id}', [CategoryController::class, 'update'])->name('admin.category.update');
      Route::delete('categories/destroy/{id}',[CategoryController::class, 'destroy'])->name('admin.category.destroy');
+
+    // Manage pricing
+    Route::get('pricing', [PricingController::class, 'index'])->name('admin.pricing');
+    Route::get('pricing/create', [PricingController::class, 'create'])->name('admin.pricing.create');
+    Route::post('pricing/create', [PricingController::class, 'store'])->name('admin.pricing.store');
+    Route::get('pricing/edit/{id}', [PricingController::class, 'edit'])->name('admin.pricing.edit');
+    Route::post('pricing/edit/{id}', [PricingController::class, 'update'])->name('admin.pricing.update');
+    Route::delete('pricing/destroy/{id}',[PricingController::class, 'destroy'])->name('admin.pricing.destroy');
 
      // Manage Tags
      Route::get('tags', [TagController::class, 'index'])->name('admin.tag');

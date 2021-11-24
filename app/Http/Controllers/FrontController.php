@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\PricingModel;
 use Illuminate\Http\Request;
 use App\Models\{About, Banner, Category, Faq, General, Link, Page, Partner, Pcategory, Portfolio, Post, Tag, Team, Testimonial, Service, Subscriber};
 class FrontController extends Controller
@@ -17,7 +18,9 @@ class FrontController extends Controller
         $pcategories = Pcategory::all();
         $portfolio = Portfolio::all();
         $service = Service::orderBy('title','asc')->get();
-        return view ('front.home',compact('about','banner','general','link','lpost','partner','pcategories','portfolio','service'));
+        $pricing=PricingModel::all();
+
+        return view ('front.home',compact('about','banner','general','link','lpost','partner','pcategories','portfolio','service','pricing'));
     }
 
     public function about()

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Portfolio;
+use App\Models\PricingModel;
 use Illuminate\Http\Request;
 use App\Models\{About, General, Page, Post, Team, User};
 
@@ -14,7 +15,8 @@ class GeneralController extends Controller
         $blog = Post::count();
         $page = Page::count();
         $general=General::find(1);
-        return view ('admin.dashboard', compact('admin','blog','page','dishes','general'));
+        $pricing=PricingModel::count();
+        return view ('admin.dashboard', compact('admin','blog','page','dishes','general','pricing'));
     }
 
     public function general(){

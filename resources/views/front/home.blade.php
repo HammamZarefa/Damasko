@@ -67,7 +67,7 @@
     <div class="container">
       <!--Text Rotate-->
       <h1 class="text_rotate center">
-        <i class="quote_left"></i> <span class="rotate">Delicious and Easy Dishes., If it is not full we give twice., Delicious and Easy Dishes.</span> <i class="quote_right"></i></h1>
+        <i class="quote_left"></i> <span class="rotate">{{ __('messages.topmessage') }}</span> <i class="quote_right"></i></h1>
       <!--Rotating Words-->
 
       <!--Slide and Newsletter-->
@@ -91,15 +91,15 @@
           <div class="col-md-4">
             <!--Newsletter-->
             <div class="newsletter">
-              <h2>Recieve the Lastes Promotions - Newsletter</h2>
-              <p>Become a member by subscribing the form displayed below.</p>
+              <h2>{{ __('messages.latestprom') }}</h2>
+              <p>{{ __('messages.become') }}</p>
               <!-- Begin MailChimp Signup Form -->
               <div id="mc_embed_signup">
                 <form class="validate" action="http://imaginacionweb.us4.list-manage1.com/subscribe/post?u=f9297aa4909dff7a0b00a9726&amp;id=4f4fbf8f69" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 
-                  <input type="text" name="name" class="name" placeholder="Name here!">
-                  <input type="email" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email address here!">
-                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="botton">
+                  <input type="text" name="name" class="name" placeholder="{{ __('messages.namehere') }}">
+                  <input type="email" name="EMAIL" class="email" id="mce-EMAIL" placeholder="{{ __('messages.emailaddresshere') }}">
+                  <input type="submit" value="{{ __('messages.subscribe') }}" name="subscribe" id="mc-embedded-subscribe" class="botton">
                 </form>
               </div>
               <!--End mc_embed_signup-->
@@ -294,87 +294,30 @@
     <!--Pricing-->
     <section class="container pricing">
       <div class="row">
-
         <div class="col-md-4">
           <!--Item -->
+          @foreach($pricing as $pricing)
           <div class="item_table center delay1">
             <div class="image_option">
               <img src="{{ asset('front/img/pricing/1.jpg') }}" alt="">
               <div class="image_text_hover">
-                <h3><i class="fa fa-cutlery"></i> To Start Day</h3>
-                <span><i class="fa fa-coffee"></i>  Main Dish</span>
+                <h3><i class="fa fa-cutlery"></i> {{$pricing->name}}</h3>
+                <span><i class="fa fa-coffee"></i>  {{$pricing->short}}</span>
               </div>
             </div>
             <ul>
-              <li>Salad</li>
-              <li>Soup</li>
-              <li>Surprise Dish</li>
-              <li>Salad</li>
-              <li>Soup</li>
-              <li>Surprise Dish</li>
+            @foreach(explode(',', $pricing->items) as $item)
+              <li>{{$item}}</li>
+            @endforeach
             </ul>
             <div class="moving">
-              <a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from $90</a>
+              <a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from ${{$pricing->price}}</a>
             </div>
           </div>
+          @endforeach
           <!--Item -->
         </div>
-
-
-        <div class="col-md-4">
-          <!--Item -->
-          <div class="item_table center delay2">
-            <div class="image_option">
-              <img src="{{ asset('front/img/pricing/2.jpg') }}" alt="">
-              <div class="image_text_hover">
-                <h3><i class="fa fa-cutlery"></i> Desserts</h3>
-                <span><i class="fa fa-coffee"></i>  Second Dish</span>
-              </div>
-            </div>
-            <ul>
-              <li>Chicken</li>
-              <li>Bacalo</li>
-              <li>Paella</li>
-              <li>Chicken</li>
-              <li>Breaf</li>
-              <li>Merluza</li>
-            </ul>
-            <div class="moving">
-              <a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from $90 </a>
-            </div>
-          </div>
-          <!--Item -->
-        </div>
-
-
-        <div class="col-md-4">
-          <!--Item -->
-          <div class="item_table center delay3">
-            <div class="image_option">
-              <img src="{{ asset('front/img/pricing/3.jpg') }}" alt="">
-              <div class="image_text_hover">
-                <h3><i class="fa fa-cutlery"></i> Drinks</h3>
-                <span><i class="fa fa-coffee"></i>  Last Dish</span>
-              </div>
-            </div>
-            <ul>
-              <li>Water</li>
-              <li>Wine</li>
-              <li>Beer</li>
-              <li>Water</li>
-              <li>Wine</li>
-              <li>Beer</li>
-            </ul>
-            <div class="moving">
-              <a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from $90 </a>
-            </div>
-          </div>
-          <!--Item -->
-        </div>
-
       </div>
-      </div>
-
     </section>
     <!--Pricing-->
 

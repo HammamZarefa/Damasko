@@ -96,8 +96,8 @@
           <!--Menu-->
           <ul id="menu" class="sf-menu">
 
-            <li><a href="#projects">Latest Dishes</a></li>
-            <li><a href="#services">Features</a></li>
+            <li><a href="#projects">{{ __('messages.latestdishes') }}</a></li>
+            <li><a href="#services">{{ __('messages.features') }}</a></li>
             {{--<li><a href="#">Features</a>--}}
               {{--<ul>--}}
                 {{--<li><a href="index_full_slide.html">Full Slider</a></li>--}}
@@ -112,10 +112,22 @@
                 {{--</li>--}}
               {{--</ul>--}}
             {{--</li>--}}
-            <li><a href="#pricing_info">Pricing Menu</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#pricing_info">{{ __('messages.pricingmenu') }}</a></li>
+            <li><a href="#contact">{{ __('messages.contact') }}</a></li>
+            @php $locale = session()->get('locale'); @endphp
+            {{--<li class="nav-item dropdown">--}}
 
-            <li><a href="#step" class="botton"><i class="fa fa-thumbs-up"></i> | Subscribe Now</a></li>
+            @switch($locale)
+              @case('en')
+              <a class="lang" href="lang/fi"> <img src="{{asset('front/img/flag/fi.jpg')}}" width="25px"> FI </a>
+              @break
+              @case('fi')
+              <a class="lang" href="lang/en"> <img src="{{asset('front/img/flag/en.jpg')}}" width="25px"> EN </a>
+              @break
+              @default
+              <a class="lang" href="lang/en"> <img src="{{asset('front/img/flag/en.jpg')}}" width="25px"> EN </a>
+            @endswitch
+            <li><a href="#step" class="botton"><i class="fa fa-thumbs-up"></i> | {{ __('messages.subscribenow') }}</a></li>
           </ul>
           <!--Menu-->
         </div>
@@ -138,7 +150,7 @@
           <div class="col-md-6">
 
             <div class="number_phone_right">
-              <h3><i class="fa fa-home"></i> Address</h3>
+              <h3><i class="fa fa-home"></i> {{ __('messages.address') }}</h3>
               <p>{{ $general->address1 }}</p>
               <p>{{ $general->address2 }}</p>
             </div>
@@ -147,9 +159,9 @@
 
           <div class="col-md-6">
 
-            <h3><i class="fa fa-phone"></i> Contact</h3>
-            <p>Phone:&nbsp;{{ $general->phone }}</p>
-            <p>Email:&nbsp;
+            <h3><i class="fa fa-phone"></i> {{ __('messages.contact') }}</h3>
+            <p>{{ __('messages.phone') }}:&nbsp;{{ $general->phone }}</p>
+            <p>{{ __('messages.email') }}:&nbsp;
               <a href="mailto:{{ $general->email }}">{{ $general->email }}</a></p>
 
           </div>
@@ -157,13 +169,13 @@
         </div>
 
         <ul class="info_about center">
-          <li><a href="#">Community Guidelines</a></li>
-          <li><a href="#">TOS & Privacy</a></li>
-          <li><a href="#">Help & FAQ</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Advertise</a></li>
-          <li><a href="#">Facts & Figures</a></li>
-          <li><a href="#">Friends</a></li>
+          <li><a href="#">{{ __('messages.communityguidelines') }}</a></li>
+          <li><a href="#">{{ __('messages.tosprivacy') }}</a></li>
+          <li><a href="#">{{ __('messages.helpfaq') }}</a></li>
+          <li><a href="#">{{ __('messages.contact') }}</a></li>
+          <li><a href="#">{{ __('messages.advertise') }}</a></li>
+          <li><a href="#">{{ __('messages.factsfigures') }}</a></li>
+          <li><a href="#">{{ __('messages.friends') }}</a></li>
         </ul>
       </div>
       <!--Numbers Phone-->

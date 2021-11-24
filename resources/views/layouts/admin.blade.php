@@ -92,7 +92,15 @@
           </div>
         </div>
       </li>
-      
+
+      {{--//pricing--}}
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('admin.pricing') }}">
+          <i class="fas fa-fw fa-table"></i>
+          <span>Pricing</span></a>
+      </li>
+
+
       <li class="nav-item">
         <a class="nav-link" href="{{ route('admin.faq') }}">
           <i class="fas fa-fw fa-table"></i>
