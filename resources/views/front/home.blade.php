@@ -294,32 +294,73 @@
     <!--Pricing-->
     <section class="container pricing">
       <div class="row">
-        <div class="col-md-4">
           <!--Item -->
-          @foreach($pricing as $pricing)
+          <div class="col-md-4">
           <div class="item_table center delay1">
             <div class="image_option">
               <img src="{{ asset('front/img/pricing/1.jpg') }}" alt="">
               <div class="image_text_hover">
-                <h3><i class="fa fa-cutlery"></i> {{$pricing->name}}</h3>
-                <span><i class="fa fa-coffee"></i>  {{$pricing->short}}</span>
+                <h3><i class="fa fa-cutlery"></i> {{$pricing[0]->name}}</h3>
+                <span><i class="fa fa-coffee"></i>  {{$pricing[0]->short}}</span>
               </div>
             </div>
             <ul>
-            @foreach(explode(',', $pricing->items) as $item)
+            @foreach(explode(',', $pricing[0]->items) as $item)
               <li>{{$item}}</li>
             @endforeach
             </ul>
             <div class="moving">
-              <a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from ${{$pricing->price}}</a>
+              <a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from ${{$pricing[0]->price}}</a>
             </div>
           </div>
-          @endforeach
+          </div>
           <!--Item -->
+        <div class="col-md-4">
+          <!--Item -->
+          <div class="item_table center delay2">
+            <div class="image_option">
+              <img src="{{ asset('front/img/pricing/1.jpg') }}" alt="">
+              <div class="image_text_hover">
+                <h3><i class="fa fa-cutlery"></i> {{$pricing[1]->name}}</h3>
+                <span><i class="fa fa-coffee"></i>  {{$pricing[1]->short}}</span>
+              </div>
+            </div>
+            <ul>
+              @foreach(explode(',', $pricing[1]->items) as $item)
+                <li>{{$item}}</li>
+              @endforeach
+            </ul>
+            <div class="moving">
+              <a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from ${{$pricing[2]->price}}</a>
+            </div>
+          </div>
+        </div>
+          <!--Item -->
+          <div class="col-md-4">
+            <!--Item -->
+          <div class="item_table center delay3">
+            <div class="image_option">
+              <img src="{{ asset('front/img/pricing/1.jpg') }}" alt="">
+              <div class="image_text_hover">
+                <h3><i class="fa fa-cutlery"></i> {{$pricing[2]->name}}</h3>
+                <span><i class="fa fa-coffee"></i>  {{$pricing[2]->short}}</span>
+              </div>
+            </div>
+            <ul>
+              @foreach(explode(',', $pricing[2]->items) as $item)
+                <li>{{$item}}</li>
+              @endforeach
+            </ul>
+            <div class="moving">
+              <a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from ${{$pricing[2]->price}}</a>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
     </section>
     <!--Pricing-->
+
 
     <!--Contact Form-->
     <section class="container" id="contact">

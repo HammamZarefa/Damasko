@@ -35,7 +35,7 @@
   <link href="{{ asset('front/css/style.css') }}" rel="stylesheet">
   
   {{-- Sharethis --}}
-  {!! $general->sharethis !!}
+  {{--{!! $general->sharethis !!}--}}
 
   <!-- =======================================================
   * Template Name: Company - v2.1.0
