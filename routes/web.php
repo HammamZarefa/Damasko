@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\{PcategoryController,BannerController, CategoryController, FaqController, FrontController, GeneralController, LinkController, PageController, PartnerController,  PortfolioController, PostController, ServiceController, TagController, TestimonialController, TeamController, UserController,PricingController,LocalizationController};
+use App\Http\Controllers\{PCategoryController,BannerController, CategoryController, FaqController, FrontController, GeneralController, LinkController, PageController, PartnerController,  PortfolioController, PostController, ServiceController, TagController, TestimonialController, TeamController, UserController,PricingController,LocalizationController};
 
 /*
 |--------------------------------------------------------------------------
