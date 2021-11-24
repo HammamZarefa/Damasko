@@ -331,7 +331,7 @@
               @endforeach
             </ul>
             <div class="moving">
-              <a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from ${{$pricing[2]->price}}</a>
+              <a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from ${{$pricing[1]->price}}</a>
             </div>
           </div>
         </div>
