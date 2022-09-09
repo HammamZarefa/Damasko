@@ -64,119 +64,119 @@
   {{--</section><!-- End Hero -->--}}
 
 {{--//map section--}}
-    <div class="container">
-      <!--Text Rotate-->
-      <h1 class="text_rotate center">
-        <i class="quote_left"></i> <span class="rotate">{{ __('messages.topmessage') }}</span> <i class="quote_right"></i></h1>
-      <!--Rotating Words-->
+    {{--<div class="container">--}}
+      {{--<!--Text Rotate-->--}}
+      {{--<h1 class="text_rotate center">--}}
+        {{--<i class="quote_left"></i> <span class="rotate">{{ __('messages.topmessage') }}</span> <i class="quote_right"></i></h1>--}}
+      {{--<!--Rotating Words-->--}}
 
-      <!--Slide and Newsletter-->
-      <section class="intro_section">
+      {{--<!--Slide and Newsletter-->--}}
+      {{--<section class="intro_section">--}}
 
-        <div class="row">
-          <div class="col-md-8">
-            <div class="camera_wrap" id="slide">
-            @foreach ($banner as $key => $banner)
-              <!-- Item Slide -->
-              <div  data-src="{{asset('storage/'.$banner->cover)}}">
-                <div class="camera_caption fadeFromLeft">
-                </div>
-              </div>
-              <!-- End Item Slide -->
-              @endforeach
-            </div>
+        {{--<div class="row">--}}
+          {{--<div class="col-md-8">--}}
+            {{--<div class="camera_wrap" id="slide">--}}
+            {{--@foreach ($banner as $key => $banner)--}}
+              {{--<!-- Item Slide -->--}}
+              {{--<div  data-src="{{asset('storage/'.$banner->cover)}}">--}}
+                {{--<div class="camera_caption fadeFromLeft">--}}
+                {{--</div>--}}
+              {{--</div>--}}
+              {{--<!-- End Item Slide -->--}}
+              {{--@endforeach--}}
+            {{--</div>--}}
 
-          </div>
+          {{--</div>--}}
 
-          <div class="col-md-4">
-            <!--Newsletter-->
-            <div class="newsletter">
-              <h2>{{ __('messages.latestprom') }}</h2>
-              <p>{{ __('messages.become') }}</p>
-              <!-- Begin MailChimp Signup Form -->
-              <div id="mc_embed_signup">
-                <form class="validate" action="http://imaginacionweb.us4.list-manage1.com/subscribe/post?u=f9297aa4909dff7a0b00a9726&amp;id=4f4fbf8f69" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          {{--<div class="col-md-4">--}}
+            {{--<!--Newsletter-->--}}
+            {{--<div class="newsletter">--}}
+              {{--<h2>{{ __('messages.latestprom') }}</h2>--}}
+              {{--<p>{{ __('messages.become') }}</p>--}}
+              {{--<!-- Begin MailChimp Signup Form -->--}}
+              {{--<div id="mc_embed_signup">--}}
+                {{--<form class="validate" action="http://imaginacionweb.us4.list-manage1.com/subscribe/post?u=f9297aa4909dff7a0b00a9726&amp;id=4f4fbf8f69" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>--}}
 
-                  <input type="text" name="name" class="name" placeholder="{{ __('messages.namehere') }}">
-                  <input type="email" name="EMAIL" class="email" id="mce-EMAIL" placeholder="{{ __('messages.emailaddresshere') }}">
-                  <input type="submit" value="{{ __('messages.subscribe') }}" name="subscribe" id="mc-embedded-subscribe" class="botton">
-                </form>
-              </div>
-              <!--End mc_embed_signup-->
-            </div>
-            <!--Newsletter-->
-          </div>
-        </div>
+                  {{--<input type="text" name="name" class="name" placeholder="{{ __('messages.namehere') }}">--}}
+                  {{--<input type="email" name="EMAIL" class="email" id="mce-EMAIL" placeholder="{{ __('messages.emailaddresshere') }}">--}}
+                  {{--<input type="submit" value="{{ __('messages.subscribe') }}" name="subscribe" id="mc-embedded-subscribe" class="botton">--}}
+                {{--</form>--}}
+              {{--</div>--}}
+              {{--<!--End mc_embed_signup-->--}}
+            {{--</div>--}}
+            {{--<!--Newsletter-->--}}
+          {{--</div>--}}
+        {{--</div>--}}
 
-      </section>
-      <!--Slide and Newsletter-->
-    </div>
+      {{--</section>--}}
+      {{--<!--Slide and Newsletter-->--}}
+    {{--</div>--}}
 
-    <!--Map-->
-    <section class="map center">
-      <div class="container">
+    {{--<!--Map-->--}}
+    {{--<section class="map center">--}}
+      {{--<div class="container">--}}
 
-        <!--Rotating Words-->
-        <h2 class="top">Offer the Best Dishes on Demand High Quality and Good Price</h2>
-        <!--Rotating Words-->
+        {{--<!--Rotating Words-->--}}
+        {{--<h2 class="top">Offer the Best Dishes on Demand High Quality and Good Price</h2>--}}
+        {{--<!--Rotating Words-->--}}
 
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        {{--<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>--}}
 
-        <!--Buttons-->
-        <ul class="buttons center">
-          <li><a href="#" class="botton"><i class="fa fa-group"></i> | Online Order</a></li>
-          <li>or</li>
-          <li><a href="#" class="botton"><i class="fa fa-cutlery"></i> | See Our Principal Dishes</a></li>
-        </ul>
-        <!--Buttons-->
+        {{--<!--Buttons-->--}}
+        {{--<ul class="buttons center">--}}
+          {{--<li><a href="#" class="botton"><i class="fa fa-group"></i> | Online Order</a></li>--}}
+          {{--<li>or</li>--}}
+          {{--<li><a href="#" class="botton"><i class="fa fa-cutlery"></i> | See Our Principal Dishes</a></li>--}}
+        {{--</ul>--}}
+        {{--<!--Buttons-->--}}
 
-        <!--Social-->
-        <div class="social center">
-          <div class="row">
+        {{--<!--Social-->--}}
+        {{--<div class="social center">--}}
+          {{--<div class="row">--}}
 
-            <!--twitter-->
-            <div class="col-md-3 icon_social delay1">
-              <a href="{{ $general->twitter }}">
-                <i class="fa fa-twitter"></i>
-                <p>Help us with Twitter</p>
-              </a>
-            </div>
-            <!--twitter-->
+            {{--<!--twitter-->--}}
+            {{--<div class="col-md-3 icon_social delay1">--}}
+              {{--<a href="{{ $general->twitter }}">--}}
+                {{--<i class="fa fa-twitter"></i>--}}
+                {{--<p>Help us with Twitter</p>--}}
+              {{--</a>--}}
+            {{--</div>--}}
+            {{--<!--twitter-->--}}
 
-            <!--instragram-->
-            <div class="col-md-3 icon_social delay2">
-              <a href="{{ $general->instagram }}" class="">
-                <i class="fa fa-instagram"></i>
-                <p>Share our Pictures</p>
-              </a>
-            </div>
-            <!--instragram-->
+            {{--<!--instragram-->--}}
+            {{--<div class="col-md-3 icon_social delay2">--}}
+              {{--<a href="{{ $general->instagram }}" class="">--}}
+                {{--<i class="fa fa-instagram"></i>--}}
+                {{--<p>Share our Pictures</p>--}}
+              {{--</a>--}}
+            {{--</div>--}}
+            {{--<!--instragram-->--}}
 
-            <!--linkedin-->
-            <div class="col-md-3 icon_social delay3">
-              <a href="{{ $general->linkedin }}">
-                <i class="fa fa-linkedin"></i>
-                <p>Join with Us</p>
-              </a>
-            </div>
-            <!--linkedin-->
+            {{--<!--linkedin-->--}}
+            {{--<div class="col-md-3 icon_social delay3">--}}
+              {{--<a href="{{ $general->linkedin }}">--}}
+                {{--<i class="fa fa-linkedin"></i>--}}
+                {{--<p>Join with Us</p>--}}
+              {{--</a>--}}
+            {{--</div>--}}
+            {{--<!--linkedin-->--}}
 
-            <!--youtube-->
-            <div class="col-md-3 icon_social delay4">
-              <a href="{{ $general->youtube }}">
-                <i class="fa fa-youtube-play"></i>
-                <p>See our New Videos</p>
-              </a>
-            </div>
-            <!--youtube-->
+            {{--<!--youtube-->--}}
+            {{--<div class="col-md-3 icon_social delay4">--}}
+              {{--<a href="{{ $general->youtube }}">--}}
+                {{--<i class="fa fa-youtube-play"></i>--}}
+                {{--<p>See our New Videos</p>--}}
+              {{--</a>--}}
+            {{--</div>--}}
+            {{--<!--youtube-->--}}
 
-          </div>
-        </div>
-        <!--Social-->
+          {{--</div>--}}
+        {{--</div>--}}
+        {{--<!--Social-->--}}
 
-      </div>
-    </section>
-    <!--Map-->
+      {{--</div>--}}
+    {{--</section>--}}
+    {{--<!--Map-->--}}
 
 
     <!--dishes-->
@@ -236,36 +236,36 @@
 
 
 
-    <!--Services-->
-    <section class="services" id="services">
-      <div class="container">
-        <h2 class="center">Look Some Features that We Offer you</h2>
+    {{--<!--Services-->--}}
+    {{--<section class="services" id="services">--}}
+      {{--<div class="container">--}}
+        {{--<h2 class="center">Look Some Features that We Offer you</h2>--}}
 
-        <div class="items_services center">
+        {{--<div class="items_services center">--}}
 
-          <div class="row">
-            @foreach($service as $service)
-            <!--Item One-->
-            <div class="col-md-4 item_service">
-              <div class="icon_service">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>
-                </svg>
-                <i class="{{ $service->icon }}"></i>
+          {{--<div class="row">--}}
+            {{--@foreach($service as $service)--}}
+            {{--<!--Item One-->--}}
+            {{--<div class="col-md-4 item_service">--}}
+              {{--<div class="icon_service">--}}
+                {{--<svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">--}}
+                {{--<path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174"></path>--}}
+                {{--</svg>--}}
+                {{--<i class="{{ $service->icon }}"></i>--}}
                 {{--<img src="{{ $service->icon }}) }}" alt="">--}}
-              </div>
-              <h3>{{ $service->title }}</h3>
-              <p>{{ $service->quote }} </p>
-            </div>
-            <!--Item One-->
-              @endforeach
-          </div>
+              {{--</div>--}}
+              {{--<h3>{{ $service->title }}</h3>--}}
+              {{--<p>{{ $service->quote }} </p>--}}
+            {{--</div>--}}
+            {{--<!--Item One-->--}}
+              {{--@endforeach--}}
+          {{--</div>--}}
 
-        </div>
+        {{--</div>--}}
 
-      </div>
-    </section>
-    <!--Services-->
+      {{--</div>--}}
+    {{--</section>--}}
+    {{--<!--Services-->--}}
 
 
 
@@ -280,86 +280,86 @@
     </div>
     <!-- Grid -->
 
-    <!--Pricing table-->
-    <section class="center pricing_info" id="pricing_info">
-      <div class="container">
-        <h2>We Have a Spectacular Menu</h2>
+    {{--<!--Pricing table-->--}}
+    {{--<section class="center pricing_info" id="pricing_info">--}}
+      {{--<div class="container">--}}
+        {{--<h2>We Have a Spectacular Menu</h2>--}}
 
-        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        {{--<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>--}}
 
-      </div>
-    </section>
-    <!--Pricing table-->
+      {{--</div>--}}
+    {{--</section>--}}
+    {{--<!--Pricing table-->--}}
 
-    <!--Pricing-->
-    <section class="container pricing">
-      <div class="row">
-          <!--Item -->
-          <div class="col-md-4">
-          <div class="item_table center delay1">
-            <div class="image_option">
-              <img src="{{ asset('front/img/pricing/1.jpg') }}" alt="">
-              <div class="image_text_hover">
-                <h3><i class="fa fa-cutlery"></i> {{$pricing[0]->name}}</h3>
-                <span><i class="fa fa-coffee"></i>  {{$pricing[0]->short}}</span>
-              </div>
-            </div>
-            <ul>
-            @foreach(explode(',', $pricing[0]->items) as $item)
-              <li>{{$item}}</li>
-            @endforeach
-            </ul>
-            <div class="moving">
-              <a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from ${{$pricing[0]->price}}</a>
-            </div>
-          </div>
-          </div>
-          <!--Item -->
-        <div class="col-md-4">
-          <!--Item -->
-          <div class="item_table center delay2">
-            <div class="image_option">
-              <img src="{{ asset('front/img/pricing/1.jpg') }}" alt="">
-              <div class="image_text_hover">
-                <h3><i class="fa fa-cutlery"></i> {{$pricing[1]->name}}</h3>
-                <span><i class="fa fa-coffee"></i>  {{$pricing[1]->short}}</span>
-              </div>
-            </div>
-            <ul>
-              @foreach(explode(',', $pricing[1]->items) as $item)
-                <li>{{$item}}</li>
-              @endforeach
-            </ul>
-            <div class="moving">
-              <a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from ${{$pricing[1]->price}}</a>
-            </div>
-          </div>
-        </div>
-          <!--Item -->
-          <div class="col-md-4">
-            <!--Item -->
-          <div class="item_table center delay3">
-            <div class="image_option">
-              <img src="{{ asset('front/img/pricing/1.jpg') }}" alt="">
-              <div class="image_text_hover">
-                <h3><i class="fa fa-cutlery"></i> {{$pricing[2]->name}}</h3>
-                <span><i class="fa fa-coffee"></i>  {{$pricing[2]->short}}</span>
-              </div>
-            </div>
-            <ul>
-              @foreach(explode(',', $pricing[2]->items) as $item)
-                <li>{{$item}}</li>
-              @endforeach
-            </ul>
-            <div class="moving">
-              <a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from ${{$pricing[2]->price}}</a>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Pricing-->
+    {{--<!--Pricing-->--}}
+    {{--<section class="container pricing">--}}
+      {{--<div class="row">--}}
+          {{--<!--Item -->--}}
+          {{--<div class="col-md-4">--}}
+          {{--<div class="item_table center delay1">--}}
+            {{--<div class="image_option">--}}
+              {{--<img src="{{ asset('front/img/pricing/1.jpg') }}" alt="">--}}
+              {{--<div class="image_text_hover">--}}
+                {{--<h3><i class="fa fa-cutlery"></i> {{$pricing[0]->name}}</h3>--}}
+                {{--<span><i class="fa fa-coffee"></i>  {{$pricing[0]->short}}</span>--}}
+              {{--</div>--}}
+            {{--</div>--}}
+            {{--<ul>--}}
+            {{--@foreach(explode(',', $pricing[0]->items) as $item)--}}
+              {{--<li>{{$item}}</li>--}}
+            {{--@endforeach--}}
+            {{--</ul>--}}
+            {{--<div class="moving">--}}
+              {{--<a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from ${{$pricing[0]->price}}</a>--}}
+            {{--</div>--}}
+          {{--</div>--}}
+          {{--</div>--}}
+          {{--<!--Item -->--}}
+        {{--<div class="col-md-4">--}}
+          {{--<!--Item -->--}}
+          {{--<div class="item_table center delay2">--}}
+            {{--<div class="image_option">--}}
+              {{--<img src="{{ asset('front/img/pricing/1.jpg') }}" alt="">--}}
+              {{--<div class="image_text_hover">--}}
+                {{--<h3><i class="fa fa-cutlery"></i> {{$pricing[1]->name}}</h3>--}}
+                {{--<span><i class="fa fa-coffee"></i>  {{$pricing[1]->short}}</span>--}}
+              {{--</div>--}}
+            {{--</div>--}}
+            {{--<ul>--}}
+              {{--@foreach(explode(',', $pricing[1]->items) as $item)--}}
+                {{--<li>{{$item}}</li>--}}
+              {{--@endforeach--}}
+            {{--</ul>--}}
+            {{--<div class="moving">--}}
+              {{--<a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from ${{$pricing[1]->price}}</a>--}}
+            {{--</div>--}}
+          {{--</div>--}}
+        {{--</div>--}}
+          {{--<!--Item -->--}}
+          {{--<div class="col-md-4">--}}
+            {{--<!--Item -->--}}
+          {{--<div class="item_table center delay3">--}}
+            {{--<div class="image_option">--}}
+              {{--<img src="{{ asset('front/img/pricing/1.jpg') }}" alt="">--}}
+              {{--<div class="image_text_hover">--}}
+                {{--<h3><i class="fa fa-cutlery"></i> {{$pricing[2]->name}}</h3>--}}
+                {{--<span><i class="fa fa-coffee"></i>  {{$pricing[2]->short}}</span>--}}
+              {{--</div>--}}
+            {{--</div>--}}
+            {{--<ul>--}}
+              {{--@foreach(explode(',', $pricing[2]->items) as $item)--}}
+                {{--<li>{{$item}}</li>--}}
+              {{--@endforeach--}}
+            {{--</ul>--}}
+            {{--<div class="moving">--}}
+              {{--<a href="#" class="botton"><i class="fa fa-mail-reply-all"></i> | Ordering from ${{$pricing[2]->price}}</a>--}}
+            {{--</div>--}}
+          {{--</div>--}}
+          {{--</div>--}}
+        {{--</div>--}}
+      {{--</div>--}}
+    {{--</section>--}}
+    {{--<!--Pricing-->--}}
 
 
     <!--Contact Form-->
