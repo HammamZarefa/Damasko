@@ -95,7 +95,7 @@
               {{--<p>{{ __('messages.become') }}</p>--}}
               {{--<!-- Begin MailChimp Signup Form -->--}}
               {{--<div id="mc_embed_signup">--}}
-                {{--<form class="validate" action="http://imaginacionweb.us4.list-manage1.com/subscribe/post?u=f9297aa4909dff7a0b00a9726&amp;id=4f4fbf8f69" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>--}}
+                {{--<form class="validate" action="http://imaginacionweb.us4.list-manage1.com/subscribe/Dishes?u=f9297aa4909dff7a0b00a9726&amp;id=4f4fbf8f69" method="Dishes" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>--}}
 
                   {{--<input type="text" name="name" class="name" placeholder="{{ __('messages.namehere') }}">--}}
                   {{--<input type="email" name="EMAIL" class="email" id="mce-EMAIL" placeholder="{{ __('messages.emailaddresshere') }}">--}}
@@ -179,8 +179,49 @@
     {{--<!--Map-->--}}
 
 
+
+
+    <div class="wrapper light-wrapper">
+      <div class="container inner">
+        <h2 class="title-color text-center" style="color:#4e7292;font-weight: bold;font-size: 1rem;">Our Dishes</h2>
+        <h3 class="display-3 text-center">See Our Latest Beautiful Dishes</h3>
+        <div class="space40"></div>
+        <div class="grid grid-view boxed">
+          <div class="tiles text-center light-gallery-wrapper">
+            <div class="row isotope">
+              <!-- /.item -->
+              @for($i=0;$i<5;$i++)
+              <div class="item grid-sizer col-md-6 col-lg-4 video application">
+                <div class="box bg-white shadow p-30">
+                  <figure class="main overlay overlay2 rounded mb-30">
+                    <a href="{{ asset('storage/'.$portfolio[0]->cover) }}1" class="lightbox"> <img src="{{ asset('storage/'.$portfolio[$i]->cover) }}" alt="" /></a></figure>
+                  <div class="Dishes-content">
+                    <h2 class="Dishes-title mb-10"><a href="{{ asset('storage/'.$portfolio[0]->cover) }}">{{ $portfolio[0]->name }}</a></h2>
+                    <div class="meta mb-0">
+                      <i class="fa fa-home"></i> Restaurant "{{ $portfolio[0]->client }}"
+                    </div>
+                    <div class="meta mb-0">
+                      <i class="fa fa-cutlery"></i> {{ $portfolio[0]->pcategory->name }}
+                    </div>
+                    <div class="meta mb-0"><i class="fa fa-tag"></i> Pies, Food, Plate</div>
+                  </div>
+                  <!-- /.Dishes-content -->
+                </div>
+                <!-- /.box -->
+              </div>
+              @endfor
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.tiles -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+
     <!--dishes-->
-    <section class="container projects" id="projects">
+
+    <!-- <section class="container projects" id="projects">
 
       <h2 class="center">See Our Latest Beautiful Dishes</h2>
 
@@ -200,14 +241,12 @@
             </div>
           </div>
         </div>
-        <!--Item Big Image-->
 
         <div class="col-md-6">
           <div class="row">
           @for($i=1;$i<5;$i++)
             <div class="col-md-6 project">
 
-              <!--Item -->
               <div class="view view_more">
                 <img src="{{ asset('storage/'.$portfolio[$i]->cover) }}" alt="">
                 <div class="text_hover_small">
@@ -220,7 +259,6 @@
                   </div>
                 </div>
               </div>
-              <!--Item -->
             </div>
           @endfor
 
@@ -230,11 +268,37 @@
 
       </div>
       <p class="center botton link_projects"><a href="#"><i class="fa fa-spinner"></i>  | Show me all Dishes</a></p>
-    </section>
+    </section> -->
     <!--dishes-->
-
-
-
+    <div class="wrapper light-wrapper">
+      <div class="container inner">
+        <h3 class="display-3 text-center"><i class="fa fa-spinner"></i>  | Show me all Dishes</h3>
+        <div class="space40"></div>
+        <div class="grid grid-view boxed">
+          <div class="tiles text-center light-gallery-wrapper">
+            <div class="row isotope">
+              <!-- /.item -->
+              @for($i=0;$i<5;$i++)
+              <div class="item grid-sizer col-md-3 col-lg-2 video application">
+                <div class="box bg-white shadow p-30">
+                  <figure class="main overlay overlay2 rounded mb-30">
+                    <a href="{{ asset('storage/'.$portfolio[0]->cover) }}1" class="lightbox">
+                       <img class="lis-img" src="{{ asset('storage/'.$portfolio[$i]->cover) }}" alt="" />
+                    </a>
+                  </figure>
+                  <!-- /.Dishes-content -->
+                </div>
+                <!-- /.box -->
+              </div>
+              @endfor
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.tiles -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
 
     {{--<!--Services-->--}}
     {{--<section class="services" id="services">--}}
@@ -270,14 +334,14 @@
 
 
     <!-- Grid -->
-    <div id="ri-grid" class="ri-grid ri-grid-size-1">
+    <!-- <div id="ri-grid" class="ri-grid ri-grid-size-1">
       <img class="ri-loading-image" src="{{ asset('storage/'.$portfolio[0]->cover) }}" alt="Image">
       <ul>
         @foreach($portfolio as $portfolio)
         <li><a href="#"><img src="{{ asset('storage/'.$portfolio->cover) }}" alt="Image"></a></li>
           @endforeach
       </ul>
-    </div>
+    </div> -->
     <!-- Grid -->
 
     {{--<!--Pricing table-->--}}
@@ -391,7 +455,227 @@
     </section>
     <!--Contact Form-->
 
+<!-- &&&&&&&&& product details &&&&&&&&& -->
+<div class="container-fluid modul-bt-one">
+        <div class="container modul-space-sixteen">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Dishes Detail -->
 
+
+                    <div class="Dishes-detail">
+                        <!-- Image -->
+                     
+                    <div class="wrapper light-wrapper">
+      <div class="container inner">
+        <div class="grid grid-view boxed">
+          <div class="tiles text-center light-gallery-wrapper">
+            <div class="row isotope">
+              <!-- /.item -->
+              <div class="item grid-sizer col-sm-12 col-lg-4 video application">
+                <div class="box bg-white shadow p-30">
+                  <figure class="main overlay overlay2 rounded mb-30">
+                    <a href="" class="lightbox"> 
+                      <img src="{{ asset('front/img/portfolio/portfolio-1.jpg') }}" alt="" /></a></figure>
+                
+                  <!-- /.Dishes-content -->
+                </div>
+                <!-- /.box -->
+              </div>
+              <div style="text-align: start;" class="item grid-sizer col-sm-12 col-lg-4 video application">
+               <h2>Contoh Ketiga</h2>
+               <h6> Restaurant "Maju Makmur"</h6>
+               <h6> Bridge</h5>
+               <h6> Pies, Food, Plate</h6>
+                <!-- /.box -->
+              </div>
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.tiles -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget enim elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas nibh sapien, adipiscing vitae tellus at, imperdiet convallis urna. Integer vel tempus massa. Sed lobortis mi eget aliquet vehicula. Morbi in posuere sem, blandit hendrerit lorem. Nulla nec nibh sed libero convallis convallis rhoncus ac velit. Nam dapibus diam sed scelerisque imperdiet. Curabitur vehicula eleifend sapien sit amet tincidunt. Donec sed aliquet lectus, quis pharetra velit. Aliquam aliquet interdum gravida. Duis tincidunt mi eu urna vestibulum, id rutrum metus elementum. Cras adipiscing, felis sed pulvinar semper, nunc lacus porta urna, nec porttitor magna tellus et metus. Fusce venenatis consectetur dui id sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+                        </p>
+                        <div class="well Dishes-editor-rating">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-4 text-center">
+                                    <h1>
+                                        4.2</h1>
+                                    <div class="rating">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star">
+                                        </span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star">
+                                        </span>
+                                        <span class="fa fa-star-empty"></span>
+                                    </div>
+                                    <div>
+                                        <span class="fa fa-user"></span>1,050,008 total
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-8">
+                                    <div class="row rating-desc">
+                                        <div class="col-xs-12 col-md-3 text-right">
+                                            <span class="fa fa-star" style="margin-inline-end: 5px;"></span>5
+                                        </div>
+                                        <div class="col-xs-8 col-md-9">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                                    <span class="sr-only">80%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end 5 -->
+                                        <div class="col-xs-12 col-md-3 text-right">
+                                            <span class="fa fa-star" style="margin-inline-end: 5px;"></span>4
+                                        </div>
+                                        <div class="col-xs-8 col-md-9">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                                    <span class="sr-only">60%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end 4 -->
+                                        <div class="col-xs-12 col-md-3 text-right">
+                                            <span class="fa fa-star" style="margin-inline-end: 5px;"></span>3
+                                        </div>
+                                        <div class="col-xs-8 col-md-9">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                                    <span class="sr-only">40%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end 3 -->
+                                        <div class="col-xs-12 col-md-3 text-right">
+                                            <span class="fa fa-star" style="margin-inline-end: 5px;"></span>2
+                                        </div>
+                                        <div class="col-xs-8 col-md-9">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                                    <span class="sr-only">20%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end 2 -->
+                                        <div class="col-xs-12 col-md-3 text-right">
+                                            <span class="fa fa-star" style="margin-inline-end: 5px;"></span>1
+                                        </div>
+                                        <div class="col-xs-8 col-md-9">
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 15%">
+                                                    <span class="sr-only">15%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end 1 -->
+                                    </div>
+                                    <!-- end row -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+                    <!-- Share Dishes -->
+                    <div class="Dishes-share">
+                        <h5>SHARE DISHES:</h5>
+                        <hr>
+                        <a href="#" class="btn btn-default share-Dishes">
+                            <i class="fa fa-facebook fa-lg"></i>
+                        </a>
+                        <a href="#" class="btn btn-default share-Dishes">
+                            <i class="fa fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="#" class="btn btn-default share-Dishes">
+                            <i class="fa fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="#" class="btn btn-default share-Dishes">
+                            <i class="fa fa-tumblr fa-lg"></i>
+                        </a>
+                        <a href="#" class="btn btn-default share-Dishes">
+                            <i class="fa fa-flickr fa-lg"></i>
+                        </a>
+                        <a href="#" class="btn btn-default share-Dishes">
+                            <i class="fa fa-github-alt fa-lg"></i>
+                        </a>
+                        <a href="#" class="btn btn-default share-Dishes">
+                            <i class="fa fa-google-plus fa-lg"></i>
+                        </a>
+                    </div>
+                    <!-- Comments -->
+                    <div class="comments-area">
+                        <h5>32 COMMENTS:</h5>
+                        <hr>  
+                        <div class="comment-list">                     
+                            <ul class="media-list">
+                                <!-- #1 -->
+                                <li class="">
+                                    <a class="pull-left" href="#" style="margin-inline-end: 10px;">
+                                        <img class="media-object comment-img img-circle" 
+                                        src="{{ asset('front/img/portfolio/portfolio-1.jpg') }}" alt="User" width="80" height="80">
+                                    </a>
+                                    <div class="media-body">
+                                        <h6 style="margin:0">John Doe:
+                                            <span class="label label-primary badge-comment pull-right">21 Jan</span></h6>
+                                            <small><a style="color:#4e7292" href="#"><i class="fa fa-plus-square comment-button"></i> <strong>Reply</strong></a> <a style="color:#4e7292" href="#"><i class="fa fa-shield comment-button-two"></i> <strong>Report</strong></a></small>
+                                        <p style="margin-top:10px">Ut et turpis nisl. Nam ultricies quam vitae dui pellentesque, at gravida nisi ullamcorper. Suspendisse pretium mauris lorem, quis vehicula felis tincidunt sit amet. Curabitur a ultrices sem. Nunc iaculis nisi id aliquam felis tincidunt lobortis. </p>
+                                    </div>
+                                </li>
+                            
+                                
+                            </ul> 
+                        </div>        
+                    </div>
+                    
+                    <!-- Leave Comment -->
+                    <div class="leave-comment">
+                        <h5>LEAVE COMMENT:</h5>
+                        <hr>
+                        <div class="row comment-forms">                  
+                            <div class="col-xs-12 col-sm-12 col-md-6">                
+                                <div class="form-group">	        	
+                                    <div class="input-group input-group">	            
+                                        <span class="input-group-addon"><span class="fa fa-user"></span></span>	            
+                                        <input class="form-control" id="prependedInput-01" type="text" placeholder="Name:">	          
+                                    </div>      	
+                                </div>
+                                <div class="form-group">	        	
+                                    <div class="input-group input-group">	            
+                                        <span class="input-group-addon"><span class="fa fa-envelope "></span></span>	            
+                                        <input class="form-control" id="prependedInput-02" type="text" placeholder="E-Mail:">	          
+                                    </div>       	
+                                </div>
+                                <div class="form-group">	        	
+                                    <div class="input-group input-group">	            
+                                        <span class="input-group-addon"><span class="fa fa-link"></span></span>	            
+                                        <input class="form-control" id="prependedInput-03" type="text" placeholder="Web:">	          
+                                    </div>       	
+                                </div>
+                            </div>                                              
+                            <div class="col-xs-12 col-sm-12 col-md-6">
+                                
+                                <div class="form-group">	        	
+                                    <textarea rows="8" placeholder="Add comment..." class="form-control"></textarea>   	
+                                </div>
+                                <div class="form-group pull-right">	        	
+                                    <a href="#fakelink" class="btn btn-info">Send Comment</a>	
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- &&&&&&&&& product details &&&&&&&&& -->
 
 
 

@@ -823,6 +823,30 @@ footer .info_about li:first-child{
 	opacity: 0.5;
 }
 /* Top --------------------------------------------------------------------------*/
+#whatsapp{
+	text-decoration:none;
+	position:fixed;
+	bottom:10px;
+	left:10px;
+	width:52px;
+	height:51px;
+	border:none;
+	text-indent:100%;
+	background:#4e7292;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	transition: .3s;
+	z-index: 9999;
+}
+#whatsapp:hover{
+	background: #e6b82d;
+}
+#whatsapp i{
+	color: #fff;
+	font-size: 18px;
+}
+
 #toTop {
 	display:none;
 	text-decoration:none;
@@ -1127,4 +1151,12 @@ footer .info_about li:first-child{
 		padding-bottom: 0;
 	}
 
+}
+.lis-img{
+	height: 180px !important;
+}
+@media (max-width: 767px) {
+	.lis-img{
+		height: 250px !important;
+	}
 }

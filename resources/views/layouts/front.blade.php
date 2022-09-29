@@ -33,6 +33,8 @@
 
   <!-- Template Main CSS File -->
   <link href="{{ asset('front/css/style.css') }}" rel="stylesheet">
+  <link href="{{ asset('front/css/style2.css') }}" rel="stylesheet">
+  <link href="{{ asset('front/css/style3.css') }}" rel="stylesheet">
   
   {{-- Sharethis --}}
   {{--{!! $general->sharethis !!}--}}
@@ -238,6 +240,9 @@
       {{--</div>--}}
     </div>
   </div>
+  <a href="https://wa.me/0999999999" id="whatsapp" target="_blank">
+    <i class="icofont-whatsapp"></i>
+  </a>
   <!--Copry-->
 
 
