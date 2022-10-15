@@ -1,0 +1,883 @@
+/*-------------------------------------------------------------------------------------
+Theme Name: Snowlake
+Theme URI:	https://demos.elemisthemes.com/snowlake/start.html
+Version:	1.0.2
+Author:		elemis
+01. RESET
+02. GENERAL
+03. NAVBAR
+04. STICKY HEADER
+05. MEGA MENU
+06. HAMBURGER MENU ICON
+07. OFFCANVAS
+08. SEARCH
+09. CART
+10. BUTTON
+11. BOX
+12. WRAPPERS
+13. IMAGE BACKGROUND WRAPPER
+14. IMAGE BLOCK WRAPPER
+15. VIDEO BACKGROUND WRAPPER
+16. SHADOW
+17. ROUNDED CORNERS
+18. CIRCLE
+19. DIVIVDER
+20. DROPCAP
+21. BADGE
+22. ALERT
+23. MODAL
+24. BLOCKQUOTE
+25. LISTS
+26. SERVICES
+27. CLIENTS
+28. FIGURE
+29. OVERLAY
+30. TILES
+31. BLOG
+32. WIDGETS
+33. PAGINATION
+34. BREADCRUMBS
+35. COMMENTS
+36. DIAL
+37. PROGRESS
+38. COUNTER
+39. COUNTDOWN
+40. TABS
+41. ACCORDION / COLLAPSE
+42. TABLES
+43. PRICING
+44. SHOP
+45. RATING
+46. TOOLTIP
+47. POPOVER
+48. COLUMNS & GUTTERS
+49. SLIDER REVOLUTION
+50. OWL CAROUSEL
+51. ISOTOPE
+52. PLYR
+53. SOCIAL ICONS
+54. FORMS
+55. LIGHTGALLERY
+56. SCROLL ANIMATIONS
+57. LOADING
+58. FONT ICONS LIST
+59. LINEAR ICONS LIST
+60. SPLIT LAYOUT
+61. COLORS
+62. INVERSE TEXT
+63. BOX LAYOUT
+64. RESPONSIVE
+-------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*	01. RESET
+/*-----------------------------------------------------------------------------------*/
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus {
+    outline: 0
+}
+.fit-vids-style {
+    display: none
+}
+iframe {
+    border: none
+}
+.clearfix {
+    clear: both;
+}
+::-moz-selection {
+    background: rgba(var(--rgb-default), 0.7);
+    color: #ffff;
+}
+::selection {
+    background: rgba(var(--rgb-default), 0.7);
+    color: #ffff;
+}
+.bg-default ::-moz-selection {
+    background: #ffff;
+    color: #606060;
+}
+.bg-default ::selection {
+    background: #ffff;
+    color: #606060;
+}
+br {
+    line-height: 0;
+}
+button:focus {
+    outline: none !important;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	02. GENERAL
+/*-----------------------------------------------------------------------------------*/
+html {
+    font-size: 20px;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Jost', sans-serif;
+    color: #606060;
+    font-size: 0.8rem;
+    background: #f9fafb;
+    overflow-x: hidden;
+    position: relative;
+}
+.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+.container-fluid {
+    padding-left: 20px;
+    padding-right: 20px
+}
+.navbar .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px
+}
+body,
+li,
+address {
+    line-height: 1.4rem;
+}
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-weight: normal;
+    color: inherit;
+}
+strong {
+    font-weight: bold;
+}
+p {
+    margin: 0 0 1rem
+}
+.hover {
+    transition: all 200ms ease-in-out;
+}
+a.hover {
+    -webkit-transition: border 150ms ease-in-out;
+    -o-transition: border 150ms ease-in-out;
+    transition: border 150ms ease-in-out;
+    padding-bottom: 0;
+    border-bottom: 1px solid transparent;
+}
+a.hover:hover {
+    border-bottom: 1px solid var(--color-default);
+    -webkit-transition: border 150ms ease-in-out;
+    -o-transition: border 150ms ease-in-out;
+    transition: border 150ms ease-in-out;
+}
+a {
+	color:#fff;
+    -webkit-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.dish a{color:#428bca;}
+.post-title a,
+a.nocolor {
+    color: inherit;
+}
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: var(--color-default);
+}
+.font-weight-300 {
+    font-weight: 300;
+}
+.font-weight-400 {
+    font-weight: 400;
+}
+.font-weight-500 {
+    font-weight: 500;
+}
+.font-weight-600 {
+    font-weight: 600;
+}
+.font-weight-700 {
+    font-weight: 700;
+}
+strong {
+    font-weight: 500;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    color: #404040;
+    font-weight: 500;
+    letter-spacing: normal;
+    margin-bottom: 0.8rem;
+}
+h1,
+.h1 {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+h2,
+.h2 {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+}
+h3,
+.h3 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+h4,
+.h4 {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+h5,
+.h5 {
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-bottom: 0.6rem;
+}
+h6,
+.h6 {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    margin-bottom: 0.6rem;
+}
+h1.text-uppercase,
+.h1.text-uppercase {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+h2.text-uppercase,
+.h2.text-uppercase {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+h3.text-uppercase,
+.h3.text-uppercase {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+h4.text-uppercase,
+.h4.text-uppercase {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+}
+h5.text-uppercase,
+.h5.text-uppercase {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+}
+h6.text-uppercase,
+.h6.text-uppercase {
+    font-size: 0.7rem;
+    line-height: 1rem;
+}
+.grid-view h2.post-title {
+    margin-bottom: .5rem;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+.classic-view h2.post-title,
+.caption-overlay h3 {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+}
+.widget-title {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+.section-title {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+}
+.section-title.larger {
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+}
+.section-title.text-uppercase {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    margin-bottom: 1rem;
+}
+.section-title.larger.text-uppercase {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.title-color {
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    margin-bottom: 1.05rem;
+    text-transform: uppercase;
+}
+.title-bg {
+    font-size: 0.55rem;
+    line-height: 1rem;
+    letter-spacing: 0.025rem;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 10rem;
+    padding: 0.35rem 0.7rem 0.3rem;
+}
+.page-title {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+}
+.hero {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    font-weight: 500;
+}
+.display-1 {
+    font-size: 2.5rem;
+    line-height: 3.1rem;
+    font-weight: 500;
+}
+.display-2 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    font-weight: 500;
+}
+.display-3 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: normal;
+}
+.display-4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 300;
+}
+.lead {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.page-title-wrapper .lead {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+.lead.larger {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+.text-muted {
+    color: #808080 !important;
+}
+.inner {
+    padding-top: 6rem;
+    padding-bottom: 1rem;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	28. FIGURE
+/*-----------------------------------------------------------------------------------*/
+figure {
+    margin: 0;
+    padding: 0;
+}
+figure img {
+    max-width: 100%
+}
+figure.cover img {
+    width: 100%;
+}
+figure.cover {
+    position: relative;
+}
+figure.cover .divider [class*="fill-"] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	29. OVERLAY
+/*-----------------------------------------------------------------------------------*/
+.overlay {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    transform: translate3d(0px, 0px, 0px);
+}
+figure.overlay img {
+    opacity: 1;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: top;
+    position: relative;
+}
+.classic-view figure {
+    width: auto;
+    height: auto;
+}
+.overlay figcaption,
+.overlay .figcaption {
+    padding: 0.5rem;
+    z-index: 5;
+    pointer-events: none;
+}
+.overlay * {
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.overlay img {
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.overlay:not(.caption-overlay) i {
+    display: block;
+    font-size: 1.4rem;
+}
+.overlay a,
+.overlay span.bg {
+    position: relative;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    cursor: pointer !important;
+}
+.overlay span.bg {
+    opacity: 0;
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.overlay span.bg,
+.overlay5 figcaption {
+    background: rgba(var(--rgb-dark), 0.6);
+}
+.overlay.color span.bg,
+.overlay5.color figcaption {
+    background: rgba(var(--rgb-default), 0.9);
+}
+.overlay.gradient span.bg,
+.overlay5.gradient figcaption {
+    background: none;
+    background-image: linear-gradient(125deg, rgba(95, 134, 190, 0.85) 0%, rgba(167, 114, 185, 0.85) 100%);
+}
+.overlay:hover span.bg {
+    opacity: 1;
+    -webkit-transition: opacity 0.35s ease-in-out;
+    -o-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+.overlay * {
+    color: #ffff !important;
+}
+.overlay img {
+    max-width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    vertical-align: top;
+}
+.overlay1 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.overlay1 figcaption {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0.75rem 1rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    text-align: center;
+}
+.overlay1 .from-top {
+    position: absolute;
+    padding: 0.75rem 1rem;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(-80%);
+    -ms-transform: translateY(-80%);
+    transform: translateY(-80%);
+}
+.overlay1:hover figcaption,
+.overlay1:hover .figcaption {
+    opacity: 1;
+}
+.overlay1:hover figcaption *,
+.overlay1:hover .figcaption * {
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.bg-white {
+	background: #fff;
+  }
+  .shadow {
+  box-shadow: 0 5px 10px #797979 !important;
+  transition: all 200ms ease-in-out;
+}
+/* .overlay2:before,
+.overlay2:after {
+    content: "";
+    background-color: #d5b136;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+} */
+.overlay2.light:before,
+.overlay2.light:after {
+    background-color: #404040;
+}
+.overlay2:before {
+    width: 30px;
+    height: 2px;
+}
+.overlay2:after {
+    height: 30px;
+    width: 2px;
+}
+.overlay2:hover:before,
+.overlay2:hover:after {
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    top: 50%;
+    left: 50%;
+}
+.overlay3 * {
+    position: absolute;
+    left: 0;
+    margin: 0;
+    width: 100%;
+}
+.overlay3>* {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    position: absolute;
+}
+.overlay3 figcaption {
+    height: 100%;
+    opacity: 0;
+}
+.overlay3 img {
+    position: relative;
+}
+.overlay3 .from-top {
+    bottom: 50%;
+    padding: 0 1rem;
+    -webkit-transform: translate3d(0%, -100%, 0);
+    transform: translate3d(0%, -100%, 0);
+}
+.overlay3 .from-bottom {
+    top: 50%;
+    padding: 0 1rem;
+    -webkit-transform: translate3d(0%, 100%, 0);
+    transform: translate3d(0%, 100%, 0);
+}
+.overlay3:hover * {
+    opacity: 1;
+}
+.overlay3:hover figcaption * {
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+}
+.hover-scale img {
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+.hover-scale:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.overlay4 figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: auto;
+    right: auto;
+    opacity: 0;
+    padding: 30px;
+    text-align: left;
+}
+.overlay4:hover figcaption {
+    opacity: 1;
+}
+.overlay5 figcaption {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+.overlay5:hover figcaption {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+.overlay5 span.bg {
+    display: none;
+}
+.overlay6 figcaption,
+.overlay6 .figcaption {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.overlay6:hover figcaption,
+.overlay6:hover .figcaption {
+    opacity: 1;
+}
+.overlay.caption figcaption,
+.overlay.caption .figcaption {
+    position: absolute;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.overlay.caption:hover figcaption,
+.overlay.caption:hover .figcaption {
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.overlay.caption figcaption,
+.overlay.caption .figcaption {
+    opacity: 1;
+}
+.overlay.caption.caption-overlay span.bg {
+    opacity: 1;
+    background: none;
+    background: rgba(var(--rgb-dark), 0) -webkit-gradient(linear, left top, left bottom, color-stop(15%, transparent), color-stop(20%, transparent), color-stop(55%, rgba(var(--rgb-dark), 0.3)), color-stop(85%, rgba(var(--rgb-dark), 0.7)), to(rgba(var(--rgb-dark), 0.75))) repeat scroll 0 0;
+    background: rgba(var(--rgb-dark), 0) -webkit-linear-gradient(transparent 15%, transparent 20%, rgba(var(--rgb-dark), 0.3) 55%, rgba(var(--rgb-dark), 0.7) 85%, rgba(var(--rgb-dark), 0.75) 100%) repeat scroll 0 0;
+    background: rgba(var(--rgb-dark), 0) -o-linear-gradient(transparent 15%, transparent 20%, rgba(var(--rgb-dark), 0.3) 55%, rgba(var(--rgb-dark), 0.7) 85%, rgba(var(--rgb-dark), 0.75) 100%) repeat scroll 0 0;
+    background: rgba(var(--rgb-dark), 0) linear-gradient(transparent 15%, transparent 20%, rgba(var(--rgb-dark), 0.3) 55%, rgba(var(--rgb-dark), 0.7) 85%, rgba(var(--rgb-dark), 0.75) 100%) repeat scroll 0 0;
+}
+.overlay.caption.caption-overlay span.bg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(var(--rgb-dark), 0.2);
+    -webkit-transition: opacity 0.35s ease-in-out;
+    -o-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+}
+.overlay.caption.caption-overlay:hover span.bg:after {
+    opacity: 1;
+}
+/*-----------------------------------------------------------------------------------*/
+/*	30. TILES
+/*-----------------------------------------------------------------------------------*/
+.tiles[class*="tiles-"] .items:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.tiles[class*="tiles-"] .item {
+    float: left;
+}
+.tiles[class*="tiles-"] .item {
+    height: auto
+}
+.tiles[class*="tiles-"] .item figure {
+    position: relative;
+    overflow: hidden;
+}
+.tiles .item:not(.item-detailed) figure img {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+	height: 300px;
+}
+.tiles .row .item {
+    margin-bottom: 30px;
+}
+.grid:not(.boxed) .tiles .row .item-detailed {
+    margin-bottom: 50px;
+}
+.tiles.tiles-s .row {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.tiles.tiles-s .row .item {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+.tiles.tiles-m .row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.tiles.tiles-m .row .item {
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.post-content{
+	padding: 10px;
+    background-color: #4e7292;
+    color: #fff;
+}
+.post-content h2{
+    color: #fff;
+}
+.post-content i{
+    color: #e6b82d;
+}
+
+
+
+.card {
+    position: relative;
+    background: #fff;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 30px 2px #000;
+}
+.card .header {
+    /*background: url("http://img.taste.com.au/UZVXAdo7/taste/2016/11/chinese-egg-noodle-and-vegetable-stir-fry-94186-1.jpeg") no-repeat center;*/
+    background-size: cover;
+    min-height: 350px;
+}
+.card .header .icon a .fa-heart-o {
+    position: absolute;
+    left: 85%;
+    bottom: 30.7%;
+    background: #17bebb;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 30px 1px #17bebb;
+}
+.card .text .food {
+    color: #212129;
+    text-align: left;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 5px 30px;
+}
+.card .text .fa-clock-o {
+    color: #9b9b9b;
+    margin: 0 30px;
+}
+.card .text .fa-users {
+    color: #9b9b9b;
+}
+.card .stars {
+    margin: 10px 30px;
+}
+.card .stars li a i {
+    color: #ffe500;
+}
+.card .info {
+    margin: 10px 30px;
+}
+.card a.btn {
+    display: block;
+    background: #4e7292;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 10px;
+    transition: 250ms;
+}
+.card a.btn:hover {
+    background: #17bebb;
+    transition: 250ms;
+}
+
+
+.rating {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    /*height: 150px;*/
+    position: relative;
+}
+
+.rating-0 {
+    filter: grayscale(100%);
+}
+
+.rating > input {
+    display: none;
+}
+
+.rating > label {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-top: auto;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 76%;
+    transition: .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.rating-d .fa{
+    color: #d9b334;
+}
+
