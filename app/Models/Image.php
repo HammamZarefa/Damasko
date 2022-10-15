@@ -5,13 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Portfolio extends Model
+class Image extends Model
 {
     use HasFactory;
 
-
-    public function pcategory()
-    {
-        return $this->belongsTo(Pcategory::class);
-    }
+    protected $fillable=['dish_id','name'];
 }

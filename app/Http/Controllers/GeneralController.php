@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Dish;
 use App\Models\Portfolio;
 use App\Models\PricingModel;
+use App\Models\Review;
 use Illuminate\Http\Request;
 use App\Models\{About, General, Page, Post, Team, User};
 
@@ -11,12 +13,12 @@ class GeneralController extends Controller
 {
     public function dashboard(){
         $admin = User::count();
-        $dishes = Portfolio::count();
-        $blog = Post::count();
-        $page = Page::count();
+        $dishes = Dish::count();
+        $reviews = Review::count();
+//        $page = Page::count();
         $general=General::find(1);
-        $pricing=PricingModel::count();
-        return view ('admin.dashboard', compact('admin','blog','page','dishes','general','pricing'));
+//        $pricing=PricingModel::count();
+        return view ('admin.dashboard', compact('admin','reviews','dishes','general'));
     }
 
     public function general(){

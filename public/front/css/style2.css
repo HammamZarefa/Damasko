@@ -180,6 +180,7 @@ a {
     -o-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
 }
+.dish a{color:#428bca;}
 .post-title a,
 a.nocolor {
     color: inherit;
@@ -767,3 +768,116 @@ figure.overlay img {
 .post-content i{
     color: #e6b82d;
 }
+
+
+
+.card {
+    position: relative;
+    background: #fff;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 30px 2px #000;
+}
+.card .header {
+    /*background: url("http://img.taste.com.au/UZVXAdo7/taste/2016/11/chinese-egg-noodle-and-vegetable-stir-fry-94186-1.jpeg") no-repeat center;*/
+    background-size: cover;
+    min-height: 350px;
+}
+.card .header .icon a .fa-heart-o {
+    position: absolute;
+    left: 85%;
+    bottom: 30.7%;
+    background: #17bebb;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 30px 1px #17bebb;
+}
+.card .text .food {
+    color: #212129;
+    text-align: left;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 5px 30px;
+}
+.card .text .fa-clock-o {
+    color: #9b9b9b;
+    margin: 0 30px;
+}
+.card .text .fa-users {
+    color: #9b9b9b;
+}
+.card .stars {
+    margin: 10px 30px;
+}
+.card .stars li a i {
+    color: #ffe500;
+}
+.card .info {
+    margin: 10px 30px;
+}
+.card a.btn {
+    display: block;
+    background: #4e7292;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 10px;
+    transition: 250ms;
+}
+.card a.btn:hover {
+    background: #17bebb;
+    transition: 250ms;
+}
+
+
+.rating {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    /*height: 150px;*/
+    position: relative;
+}
+
+.rating-0 {
+    filter: grayscale(100%);
+}
+
+.rating > input {
+    display: none;
+}
+
+.rating > label {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin-top: auto;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 76%;
+    transition: .3s;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+}
+
+.rating-d .fa{
+    color: #d9b334;
+}
+
