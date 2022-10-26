@@ -72,7 +72,7 @@
                   </div>
                   <div class="col-xs-8 col-md-9">
                     <div class="progress">
-                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {{count($comments->where('stars',5))*100/count($comments->whereNotNull('stars'))}}%">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {{count($comments->whereNotNull('stars'))!=0 ? count($comments->where('stars',5))*100/count($comments->whereNotNull('stars')):0}}%">
                         <span class="sr-only">80%</span>
                       </div>
                     </div>
@@ -83,7 +83,7 @@
                   </div>
                   <div class="col-xs-8 col-md-9">
                     <div class="progress">
-                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {{count($comments->where('stars',4))*100/count($comments->whereNotNull('stars'))}}%">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {{count($comments->whereNotNull('stars'))!=0 ?count($comments->where('stars',4))*100/count($comments->whereNotNull('stars')):0}}%">
                         <span class="sr-only">60%</span>
                       </div>
                     </div>
@@ -94,7 +94,7 @@
                   </div>
                   <div class="col-xs-8 col-md-9">
                     <div class="progress">
-                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {{count($comments->where('stars',3))*100/count($comments->whereNotNull('stars'))}}%">
+                      <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {{count($comments->whereNotNull('stars'))!=0 ?count($comments->where('stars',3))*100/count($comments->whereNotNull('stars')):0}}%">
                         <span class="sr-only">40%</span>
                       </div>
                     </div>
@@ -105,7 +105,7 @@
                   </div>
                   <div class="col-xs-8 col-md-9">
                     <div class="progress">
-                      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {{count($comments->where('stars',2))*100/count($comments->whereNotNull('stars'))}}%">
+                      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: {{count($comments->whereNotNull('stars'))!=0 ?count($comments->where('stars',2))*100/count($comments->whereNotNull('stars')):0}}%">
                         <span class="sr-only">20%</span>
                       </div>
                     </div>
@@ -116,7 +116,7 @@
                   </div>
                   <div class="col-xs-8 col-md-9">
                     <div class="progress">
-                      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: {{count($comments->where('stars',1))*100/count($comments->whereNotNull('stars'))}}%">
+                      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: {{count($comments->whereNotNull('stars'))!=0 ?count($comments->where('stars',1))*100/count($comments->whereNotNull('stars')):0}}%">
                         <span class="sr-only">15%</span>
                       </div>
                     </div>
