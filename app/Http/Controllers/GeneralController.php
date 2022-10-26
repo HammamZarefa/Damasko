@@ -37,7 +37,6 @@ class GeneralController extends Controller
             "phone" => "required" ,
             "email" => "required",
             "footer" => "required",
-            "gmaps" => "required"       
         ])->validate();
 
         $general = General::find(1);

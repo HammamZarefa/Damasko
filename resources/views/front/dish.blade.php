@@ -68,7 +68,7 @@
               <div class="col-xs-12 col-md-8">
                 <div class="row rating-desc">
                   <div class="col-xs-12 col-md-3 text-right">
-                    <span class="fa fa-star" style="margin-inline-end: 5px;"></span>{{ count($comments->where('stars',5)) }}
+                    <span class="fa fa-star" style="margin-inline-end: 5px;"></span>5
                   </div>
                   <div class="col-xs-8 col-md-9">
                     <div class="progress">
@@ -79,7 +79,7 @@
                   </div>
                   <!-- end 5 -->
                   <div class="col-xs-12 col-md-3 text-right">
-                    <span class="fa fa-star" style="margin-inline-end: 5px;"></span>{{ count($comments->where('stars',4)) }}
+                    <span class="fa fa-star" style="margin-inline-end: 5px;"></span>4
                   </div>
                   <div class="col-xs-8 col-md-9">
                     <div class="progress">
@@ -90,7 +90,7 @@
                   </div>
                   <!-- end 4 -->
                   <div class="col-xs-12 col-md-3 text-right">
-                    <span class="fa fa-star" style="margin-inline-end: 5px;"></span>{{ count($comments->where('stars',3)) }}
+                    <span class="fa fa-star" style="margin-inline-end: 5px;"></span>4
                   </div>
                   <div class="col-xs-8 col-md-9">
                     <div class="progress">
@@ -101,7 +101,7 @@
                   </div>
                   <!-- end 3 -->
                   <div class="col-xs-12 col-md-3 text-right">
-                    <span class="fa fa-star" style="margin-inline-end: 5px;"></span>{{ count($comments->where('stars',2)) }}
+                    <span class="fa fa-star" style="margin-inline-end: 5px;"></span>2
                   </div>
                   <div class="col-xs-8 col-md-9">
                     <div class="progress">
@@ -112,7 +112,7 @@
                   </div>
                   <!-- end 2 -->
                   <div class="col-xs-12 col-md-3 text-right">
-                    <span class="fa fa-star" style="margin-inline-end: 5px;"></span>{{ count($comments->where('stars',1)) }}
+                    <span class="fa fa-star" style="margin-inline-end: 5px;"></span>1
                   </div>
                   <div class="col-xs-8 col-md-9">
                     <div class="progress">
