@@ -801,7 +801,8 @@ figure.overlay img {
     font-weight: normal;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    margin: 5px 30px;
+    margin: 5px 20px;
+    font-size: 17px;
 }
 .card .text .fa-clock-o {
     color: #9b9b9b;
@@ -817,7 +818,8 @@ figure.overlay img {
     color: #ffe500;
 }
 .card .info {
-    margin: 10px 30px;
+    margin: 10px 20px;
+    font-size: 14px;
 }
 .card a.btn {
     display: block;
